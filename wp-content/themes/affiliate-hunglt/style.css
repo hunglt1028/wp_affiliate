@@ -20,8 +20,8 @@ Affiliate Review WordPress Theme is released under the terms of GNU GPL
 /* Basic Style */
 @font-face {
   font-family: 'Metropolis';
-  src: url('/wp-content/themes/fonts/Metropolis/Metropolis-Regular.woff2') format('woff2'),
-      url('/wp-content/themes/fonts/Metropolis/Metropolis-Regular.woff') format('woff');
+  src: url('/wp-content/themes/affiliate-hunglt/assets/fonts/Metropolis/Metropolis-Regular.woff2') format('woff2'),
+      url('/wp-content/affiliate-hunglt/assets/themes/fonts/Metropolis/Metropolis-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -29,8 +29,8 @@ Affiliate Review WordPress Theme is released under the terms of GNU GPL
 
 @font-face {
   font-family: 'Metropolis';
-  src: url('/wp-content/themes/fonts/Metropolis/Metropolis-Light.woff2') format('woff2'),
-      url('/wp-content/themes/fonts/Metropolis/Metropolis-Light.woff') format('woff');
+  src: url('/wp-content/themes/affiliate-hunglt/assets/fonts/Metropolis/Metropolis-Light.woff2') format('woff2'),
+      url('/wp-content/themes/affiliate-hunglt/assets/fonts/Metropolis/Metropolis-Light.woff') format('woff');
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -38,8 +38,8 @@ Affiliate Review WordPress Theme is released under the terms of GNU GPL
 
 @font-face {
   font-family: 'Metropolis';
-  src: url('/wp-content/themes/fonts/Metropolis/Metropolis-SemiBold.woff2') format('woff2'),
-      url('/wp-content/themes/fonts/Metropolis/Metropolis-SemiBold.woff') format('woff');
+  src: url('/wp-content/themes/affiliate-hunglt/assets/fonts/Metropolis/Metropolis-SemiBold.woff2') format('woff2'),
+      url('/wp-content/themes/affiliate-hunglt/assets/fonts/Metropolis/Metropolis-SemiBold.woff') format('woff');
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -47,8 +47,8 @@ Affiliate Review WordPress Theme is released under the terms of GNU GPL
 
 @font-face {
   font-family: 'Metropolis';
-  src: url('/wp-content/themes/fonts/Metropolis/Metropolis-Bold.woff2') format('woff2'),
-      url('/wp-content/themes/fonts/Metropolis/Metropolis-Bold.woff') format('woff');
+  src: url('/wp-content/themes/affiliate-hunglt/assets/fonts/Metropolis/Metropolis-Bold.woff2') format('woff2'),
+      url('/wp-content/themes/affiliate-hunglt/assets/fonts/Metropolis/Metropolis-Bold.woff') format('woff');
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -387,7 +387,7 @@ text-transform: uppercase;
 }
 
 .logo {
-width: 80px;
+width: 50px;
 height: auto;
 }
 
