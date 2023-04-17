@@ -1,0 +1,136 @@
+.banner-section{
+  width: auto;
+  height: auto;
+}
+/*Banner section*/
+.banner-section-img1{
+    padding-top: 35px;
+}
+.banner-section-img2{
+    padding-top: 35px;
+}
+.wp-block-column.py-5{
+    margin-top: 60px;
+}
+.wp-block-buttons, #content-vw a{
+   font-size: 14px !important;
+}
+a.wp-block-button__link.has-background:hover{
+    background-color: #f1592a !important;
+}
+p.slider-icon1,p.slider-icon2 {
+    display: inline-block;
+    color: #fff;
+    background: #F1592A;
+    border-radius: 50%;
+    padding: 15px 18px;
+    line-height: 1;
+    margin: 0;
+    position: relative;
+    width: 45px;
+    height: 45px;
+}
+p.slider-icon1:after,p.slider-icon2:after{
+    content: '';
+    width: 0;
+    height: 0;
+    border-bottom: 12px solid #F1592A;
+    border-right: 20px solid transparent;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.slider-group1,.slider-group2{
+    background: rgba(255, 262, 261, 10%);
+    position: absolute;
+    bottom: 10px;
+    width: 90%;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+.slider-group1 h4,.slider-group2 h4 {
+  margin: 0;
+}
+.wp-block-column.slider-icon1, .wp-block-column.slider-icon2 {
+   text-align: right;
+}
+.banner-section-img1 img,.banner-section-img2 img{
+  border-radius: 15px;
+}
+.banner-content h1{
+    font-size: 52px !important;
+}
+.banner-section a.wp-block-button__link {
+  font-weight: 600;
+}
+/*product section*/
+.product-section .wp-block-columns.popular-reviews-colm2 {
+    margin-top: 36px;
+    margin-bottom: 45px;
+}
+.wc-block-grid__product .wc-block-grid__product-image img{
+    height: auto;
+   
+    border-radius: 15px;
+}
+.product-section .wc-block-grid__product-title{
+    color: #000;
+    font-size: 23px;
+    text-align: left;
+    padding-left: 10px;
+    text-decoration: none !important;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+#content-vw a{
+  text-decoration: none !important;
+}
+.product-section .wc-block-grid__product .wc-block-grid__product-rating {
+    margin: 0 auto 12px;
+    float: left;
+    padding-left: 10px;
+}
+.product-section li.wc-block-grid__product {
+    border: 1px solid #C8C8C8;
+    margin: 10px;
+    max-width: 30% !important;
+    border-radius: 18px;
+}
+/*Media CSS*/
+@media screen and (min-width: 320px) and (max-width: 575px){
+  .wp-block-column.py-5 {
+    margin-top: 0px;
+  }
+  h2#top-popular-reviews {
+    margin-top: 23px;
+  }
+  .banner-section .wp-block-columns:not(.is-not-stacked-on-mobile) .slider-text1, .banner-section .wp-block-columns:not(.is-not-stacked-on-mobile) .slider-text2 {
+    flex-basis: 80% !important;
+  }
+  .banner-section .wp-block-columns:not(.is-not-stacked-on-mobile) .slider-icon1, .banner-section .wp-block-columns:not(.is-not-stacked-on-mobile) .slider-icon2{
+    flex-basis: 20% !important;
+  }
+  .wc-block-grid__product-title{
+    text-decoration: none !important;
+  }
+  .product-section li.wc-block-grid__product {
+    margin-bottom: 30px;
+    max-width: 80% !important;
+  }
+  .product-section .wc-block-grid__product-rating .star-rating{
+    margin: 10px;
+  }
+  .product-section .wc-block-grid__product .wc-block-grid__product-rating {
+        margin: 0;
+        float: none;
+        padding-left: 0px;
+    }
+}
+@media screen and (min-width: 576px) and (max-width: 768px){
+  .wp-block-column.py-5 {
+     margin-top: 0px;
+  }
+  .banner-section .wp-block-columns:not(.is-not-stacked-on-mobile) .banner-content, .banner-section .wp-block-columns:not(.is-not-stacked-on-mobile) .banner-section2 {
+    flex-basis: 100% !important;
+  }
+
+}
