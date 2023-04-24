@@ -1,39 +1,35 @@
 <?php
+require_once 'custom_multiselect_control.php';
 // Tạo phần tử Customizer
-function affiliate_hunglt_customize_register( $wp_customize ) {
+function affiliate_hunglt_news_in_home( $wp_customize ) {
     // Đăng ký section để chứa control của bạn
   
-	$wp_customize->add_section( 'affiliate_slide_section', array(
-		'title' => __( 'Slide ảnh', 'affiliate_hunglt' ),
+	$wp_customize->add_section( 'affiliate_news_section', array(
+		'title' => __( 'Tin tức trang chủ', 'affiliate_hunglt' ),
 		'priority' => 30
 	) );
 
-	// Thêm setting cho slide image
-	$wp_customize->add_setting( 'affiliate_slide_image', array(
-		'default' => '',
-		'sanitize_callback' => 'esc_url_raw'
-	) );
+    $wp_customize->add_setting( 'selected_categories', array(
+        'default' => array(),
+        'transport' => 'refresh',
+        'sanitize_callback' => 'sanitize_text_field',
+    ) );
+    // Lấy danh sách các danh mục bài viết
+    $categories = get_categories();
+    $choices = array();
+    foreach ( $categories as $category ) {
+        $choices[ $category->term_id ] = $category->name;
+    }
 
-	// Thêm control để upload ảnh slide
-	$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'affiliate_slide_image_control', array(
-		'label'    => __( 'Ảnh slide', 'affiliate_hunglt' ),
-		'section'  => 'affiliate_slide_section',
-		'settings' => 'affiliate_slide_image',
-		'priority' => 10
-	) ) );
-    // Thêm setting cho bật tắt slide
-    $wp_customize->add_setting( 'affiliate_slide_enable', array(
-        'default' => false,
-        'sanitize_callback' => 'absint'
-    ) );
- 
-    // Thêm control để bật tắt slide
-    $wp_customize->add_control( 'affiliate_slide_enable_control', array(
-        'type'     => 'checkbox',
-        'label'    => __( 'Bật/ Tắt', 'affiliate_hunglt' ),
-        'section'  => 'affiliate_slide_section',
-        'settings' => 'affiliate_slide_enable',
-    ) );
+    // Tạo control
+    $wp_customize->add_control( new Custom_Multiselect_Control( $wp_customize, 'selected_categories', array(
+        'label' => __( 'Chọn danh mục', 'affiliate_hunglt' ),
+        'section' => 'affiliate_news_section',
+        'settings' => 'selected_categories',
+        'type' => 'select', // Loại control là multicheck
+        'choices' =>  $choices,
+    ) ) );
+    
 }
  
-add_action( 'customize_register', 'affiliate_hunglt_customize_register' );
+add_action( 'customize_register', 'affiliate_hunglt_news_in_home' );

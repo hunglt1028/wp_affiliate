@@ -7,7 +7,7 @@ Description: Cóp nhặt lung tung hết =))
 Requires at least: 5.0
 Tested up to: 6.1
 Requires PHP: 7.2
-Version: 1.0.0
+Version: 1.0.1
 License: GNU General Public License v3.0
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Text Domain: affiliate-hunglt
@@ -185,7 +185,7 @@ font-weight: var(--font-weight-bold);
 SECTION               
 -----------------------------------------*/
 .section-padding {
-padding-top: 100px;
+padding-top: 30px;
 padding-bottom: 100px;
 }
 
@@ -394,7 +394,6 @@ height: auto;
 .navbar-expand-lg .navbar-nav .nav-link {
 margin-right: 0;
 margin-left: 0;
-padding: 20px;
 }
 
 .navbar-nav .nav-link {
@@ -807,7 +806,11 @@ border-radius: var(--border-radius-medium);
 position: relative;
 overflow: hidden;
 }
-
+.news-block-left {
+  border-radius: var(--border-radius-medium);
+  overflow: hidden;
+  max-width: 300px;
+}
 .news-block-two-col-image-wrap {
 border-radius: var(--border-radius-small);
 position: relative;
@@ -829,7 +832,14 @@ padding: 10px 20px;
 color: var(--white-color);
 margin-right: 10px;
 }
-
+.news-block{
+  display: flex;
+  padding-top: 10px;
+  border-bottom: 1px solid #d5d7da ;
+}
+.news-block-right {
+  padding: 10px;
+}
 .news-block-info {
 padding-top: 10px;
 padding-bottom: 10px;
