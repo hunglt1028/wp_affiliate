@@ -1,6 +1,6 @@
 <nav id="top" class="navbar navbar-expand-lg bg-light shadow-lg">
     <div class="container">
-        <a class="navbar-brand" href="index.html">
+        <a class="navbar-brand" href="/">
             <?php if(has_custom_logo()):
                 $logo_id=get_theme_mod('custom_logo');
                 $logo_url=wp_get_attachment_url($logo_id);

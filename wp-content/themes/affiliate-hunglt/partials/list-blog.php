@@ -32,53 +32,6 @@
                         <i class="bi-search"></i>
                     </button>
                 </form>
-
-                <h5 class="mt-5 mb-3">Recent news</h5>
-
-                <div class="news-block news-block-two-col d-flex mt-4">
-                    <div class="news-block-two-col-image-wrap">
-                        <a href="news-detail.html">
-                            <img src="<?=get_theme_file_uri('assets/images/news/africa-humanitarian-aid-doctor.jpg'); ?>"
-                                class="news-image img-fluid" alt="">
-                        </a>
-                    </div>
-
-                    <div class="news-block-two-col-info">
-                        <div class="news-block-title mb-2">
-                            <h6><a href="news-detail.html" class="news-block-title-link">Food donation area</a></h6>
-                        </div>
-
-                        <div class="news-block-date">
-                            <p>
-                                <i class="bi-calendar4 custom-icon me-1"></i>
-                                October 16, 2036
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="news-block news-block-two-col d-flex mt-4">
-                    <div class="news-block-two-col-image-wrap">
-                        <a href="news-detail.html">
-                            <img src="<?=get_theme_file_uri('assets/images/news/close-up-happy-people-working-together.jpg'); ?>"
-                                class="news-image img-fluid" alt="">
-                        </a>
-                    </div>
-
-                    <div class="news-block-two-col-info">
-                        <div class="news-block-title mb-2">
-                            <h6><a href="news-detail.html" class="news-block-title-link">Volunteering Clean</a></h6>
-                        </div>
-
-                        <div class="news-block-date">
-                            <p>
-                                <i class="bi-calendar4 custom-icon me-1"></i>
-                                October 24, 2036
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
                 <div class="category-block d-flex flex-column">
                     <h5 class="mb-3">Categories</h5>
 

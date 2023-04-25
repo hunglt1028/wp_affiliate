@@ -363,8 +363,8 @@ NAVIGATION
 .navbar {
 background: var(--white-color);
 z-index: 9;
-padding-top: 0;
-padding-bottom: 0;
+padding-top: 10px;
+padding-bottom: 10px;
 }
 
 .navbar-brand {
@@ -802,9 +802,11 @@ padding-bottom: 150px;
 }
 
 .news-block-top {
+  max-width: 256px;
 border-radius: var(--border-radius-medium);
 position: relative;
 overflow: hidden;
+text-align: center;
 }
 .news-block-left {
   border-radius: var(--border-radius-medium);
@@ -835,14 +837,15 @@ margin-right: 10px;
 .news-block{
   display: flex;
   padding-top: 10px;
+}
+.border-b-1{
   border-bottom: 1px solid #d5d7da ;
 }
 .news-block-right {
   padding: 10px;
 }
 .news-block-info {
-padding-top: 10px;
-padding-bottom: 10px;
+  padding: 10px;
 }
 
 .news-block-title-link {
@@ -1420,6 +1423,13 @@ RESPONSIVE STYLES
 }
 
 @media screen and (max-width: 991px) {
+.news-block{
+  display: block; 
+}
+.news-block-top {
+  margin: 0 auto;
+  max-width: 900px;
+}
 h1 {
   font-size: 42px;
 }
@@ -1445,7 +1455,6 @@ h6 {
 }
 
 .section-padding {
-  padding-top: 50px;
   padding-bottom: 50px;
 }
 
@@ -1458,8 +1467,8 @@ h6 {
 }
 
 .navbar {
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .navbar-expand-lg .navbar-nav {
@@ -1609,7 +1618,13 @@ blockquote {
 .carousel-image {
   min-height: 520px;
 }
-
+.news-block{
+  display: block; 
+}
+.news-block-top {
+  margin: 0 auto;
+  max-width: 900px;
+}
 #hero-slide .carousel-caption {
   clip-path: polygon(100% 100%, 100% 100px, 0 100%);
   padding-right: 50px;
@@ -1619,6 +1634,13 @@ blockquote {
 }
 
 @media screen and (max-width: 480px) {
+.news-block-top {
+  margin: 0 auto;
+  max-width: 900px;
+}
+.news-block{
+  display: block; 
+}
 h1 {
   font-size: 40px;
 }
