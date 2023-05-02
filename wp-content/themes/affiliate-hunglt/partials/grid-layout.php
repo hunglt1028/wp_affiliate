@@ -28,7 +28,7 @@
 				</div>
 
 				<div class="news-block-body">
-					<?=the_title();?>
+					<?=the_excerpt();?>
 				</div>
 			</div>
 		</div>

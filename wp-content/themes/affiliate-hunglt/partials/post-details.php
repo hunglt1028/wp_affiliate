@@ -6,27 +6,23 @@
         <div class="row">
             <div class="col-lg-8 col-12">
                 <article id="post-<?php the_ID(); ?>" <?php post_class('inner-service'); ?>>
-                        <div class="news-block border-b-1">
-                            <div class="news-block-info">
-                                <div class="news-block-title mb-2">
-                                    <h3><?=the_title()?></h3>
-                                </div>
-
-                                <div class="d-flex mb-2 border-b-1">
-                                    <div class="news-block-date">
-                                        <p class="m-0">
-                                            <i class="bi-calendar4 custom-icon me-1"></i>
-                                            <?=get_the_date()?>
-                                        </p>
-                                    </div>
-                                </div>
-                                
-                                <div class="news-block-body">
-                                    <?=the_content();?>
-                                </div>
-                            </div>
+                    <div class="article-title">
+                        <h3><?=the_title()?></h3>
+                    </div>
+                    <div class="article-date">
+                        <div class="news-block-date">
+                            <p class="m-0">
+                                <i class="bi-calendar4 custom-icon me-1"></i>
+                                <?=get_the_date()?>
+                            </p>
                         </div>
-                    <div class="clearfix"></div>
+                    </div>
+                    <div class="article-body">
+                        <div class="news-block-body">
+                            <?=the_content();?>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
                 </article>
                 <div class="tags-block">
                     <?php $tags= get_the_tags();
