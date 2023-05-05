@@ -5,6 +5,13 @@
 
    <?php wp_head()?>
    <style>
+    .news-block-body img{
+      width: 100%;
+      height: auto;
+    }
+    .slide-product-270{
+      height: 270px
+    }
     .slide-product-360{
         height: 360px
     }
@@ -26,7 +33,7 @@
       transition: all ease-in-out .3s;
       opacity: .2;
     }
-    
+
     .slick-active {
       opacity: .5;
     }
@@ -34,5 +41,5 @@
     .slick-current {
       opacity: 1;
     }
-  </style>
+   </style>
 </head>

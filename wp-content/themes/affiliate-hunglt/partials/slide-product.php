@@ -1,4 +1,4 @@
-<div class="container slide-product-360">
+<div class="container slide-product-270">
     <section class="regular slider">
         <div>
             <img src="http://placehold.it/350x300?text=1">
@@ -33,7 +33,7 @@
             $(".regular").slick({
                 dots: true,
                 infinite: true,
-                slidesToShow: 3,
+                slidesToShow: 4,
                 slidesToScroll: 3
             });
         }

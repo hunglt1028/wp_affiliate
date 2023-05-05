@@ -11,7 +11,7 @@
 <section class="news-section section-padding" id="section_5">
     <div class="container">
         <div class="row">
-            <div class="col-lg-8 col-12">
+            <div class="col-lg-7 col-12 slide slide-news">
                 <?php if ($query->have_posts() ) :
                     /* Start the Loop */
                     while ($query->have_posts() ) : $query->the_post();
@@ -144,3 +144,13 @@
         </div>
     </div>
 </section>
+<script type="text/javascript">
+    $(document).on('ready', function() {
+        $(".slide-news").slick({
+            dots: true,
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1
+        });
+    });
+</script>
